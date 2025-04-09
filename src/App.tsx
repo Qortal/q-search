@@ -11,7 +11,7 @@ const navigate = useNavigate();
 
 const handleSearch = () => {
   if (search.trim()) {
-    navigate(`/search?q=${encodeURIComponent(search.trim())}`);
+    navigate(`/search?q=${encodeURIComponent(search.trim().toLocaleLowerCase())}`);
   }
 };
 
